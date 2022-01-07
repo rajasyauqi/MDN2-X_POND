@@ -55,8 +55,8 @@ int16_t readDO(uint32_t voltage_mv, uint8_t temperature_c)
 #endif
 }
 // setting wifi
-const char* ssid = "iPhone";
-const char* password = "irhamaja";
+const char* ssid = ""; // isi nama SSID wifinya
+const char* password = ""; // isi password wifinya
 
 //Backend credentials
 const char* mqtt_server = "mqtt.flexiot.xl.co.id";
@@ -64,8 +64,8 @@ const char* clientId="9985435337972242";
 String DEVICE_SERIAL = "9985435337972242" ; //update the device serial according to the serial given by the consumer portal 
 const char* EVENT_TOPIC = "flexiot_esp32_demo/esp32_devkit/v35/common";
 String SUB_TOPIC_STRING = "+/" + DEVICE_SERIAL + "/flexiot_esp32_demo/esp32_devkit/v35/sub";
-const char* mqtt_username = "flexiot_esp32_demo-esp32_devkit-v35_6698";
-const char* mqtt_password = "1630829005_6698";
+const char* mqtt_username = "";
+const char* mqtt_password = "";
 WiFiClient espClient;
 PubSubClient client(espClient);
 //char msg[300];
